@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "target": "es5",
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "strict": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types","./src/@types"],
+    "types": ["webpack", "react", "react-dom", "jest"],
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "out",
+    "noImplicitAny": false,
+    "paths": {
+      "@client/*": ["./src/*"]
+    },
+    "rootDirs": ["src", "test/stories", ".storybook"]
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./test/**/*.spec.ts",
+    "./test/**/*.steps.tsx",
+    "./test/**/*.steps.ts",
+    ".eslintrc.js"
+  ],
+  "exclude": ["node_modules",
+    "server/dist", "webpack/**/**"]
+}
