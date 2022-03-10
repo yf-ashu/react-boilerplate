@@ -1,6 +1,5 @@
 import Content from '@client/components/Center/Content';
 import { color } from '@client/style/color';
-import NavBar from '@client/components/NavBar';
 import React from 'react';
 import styled from 'styled-components';
 
